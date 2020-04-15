@@ -1,0 +1,157 @@
+.elp-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	overflow: auto;
+	opacity: 0;
+	transition: all 300ms ease-in-out;
+}
+
+.elp-popup-outer-wrapper {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.elp-popup-inner-wrapper {
+    position: relative;
+    vertical-align: middle;
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+	padding: 80px 25px;
+    text-align: center;
+}
+
+.elp-popup-container {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+	margin: auto;
+	padding: 30px;
+    text-align: left;
+    color: #000;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	cursor: auto;
+}
+
+.elp-popup-overlay {
+	position: fixed;
+	display: none;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 200ms ease-in-out;
+}
+
+.elp-popup-overlay-close {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+.elp-popup-overlay-close .elp-popup-cancel {
+    width: 50px;
+	height: 50px;
+	padding: 0;
+    opacity: 1;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+	transition: all 200ms ease-in-out;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+}
+
+.elp-popup-overlay-close .elp-popup-cancel span {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+	white-space: nowrap;
+}
+
+.elp-popup-overlay-close .elp-popup-cancel::before,
+.elp-popup-overlay-close .elp-popup-cancel::after {
+	display: block;
+    content: ' ';
+    position: absolute;
+    top: 14px;
+    left: 23px;
+    width: 4px;
+    height: 22px;
+    border-radius: 4px;
+    background: #fff;
+    transition: background 200ms ease-in-out;
+}
+
+.elp-popup-overlay-close .elp-popup-cancel:hover::after,
+.elp-popup-overlay-close .elp-popup-cancel:hover::before,
+.elp-popup-overlay-close .elp-popup-cancel:focus::after,
+.elp-popup-overlay-close .elp-popup-cancel:focus::before {
+	background: #e42526;
+}
+
+.elp-popup-overlay-close .elp-popup-cancel::before {
+	transform: rotate(-45deg);
+}
+
+.elp-popup-overlay-close .elp-popup-cancel::after {
+	transform: rotate(45deg);
+}
+
+.elp-popup-content p {
+	line-height: 1.4;
+}
+
+.elp-popup-content a:hover {
+	text-decoration: underline;
+}
+
+.elp-popup-destination {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+	-webkit-hyphens: none;
+	    -ms-hyphens: none;
+	        hyphens: none;
+}
+
+.elp-popup-button {
+	display: inline-block;
+	padding: 1em 1.5em;
+	background-color: #ccc;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	text-align: center;
+	transition: all 200ms ease-out;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	cursor: pointer;
+}
+
+.elp-popup-ok {
+	color: #fff;
+	background-color: #5bb75b;
+
+}
+
+.elp-popup-content .elp-popup-ok:hover {
+	text-decoration: none;
+}
