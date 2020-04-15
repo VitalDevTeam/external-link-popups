@@ -12,6 +12,14 @@ if (! defined('ABSPATH')) {
 	exit;
 }
 
+require 'plugin-update-checker/plugin-update-checker.php';
+
+$update_checker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/VitalDevTeam/external-link-popups/',
+	__FILE__,
+	'external-link-popups'
+);
+
 class Vital_External_Link_Popups {
 
 	private $plugin_path;
