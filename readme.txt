@@ -20,5 +20,8 @@ Enables an interstitial pop-up message to users when clicking a link to an exter
 
 == Changelog ==
 
+= 2.0.1 =
+* Update test
+
 = 2.0.0 =
 * Initial release
