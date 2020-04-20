@@ -14,7 +14,7 @@ if (! defined('ABSPATH')) {
 
 require 'plugin-update-checker/plugin-update-checker.php';
 
-$update_checker = Puc_v4_Factory::buildUpdateChecker(
+$elp_update_checker = Puc_v4_Factory::buildUpdateChecker(
 	'https://github.com/VitalDevTeam/external-link-popups/',
 	__FILE__,
 	'external-link-popups'
