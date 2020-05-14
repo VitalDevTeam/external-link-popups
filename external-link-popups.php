@@ -78,6 +78,7 @@ class Vital_External_Link_Popups {
 	 * @return void
 	 */
 	public function enqueue_scripts() {
+		global $is_IE;
 
 		wp_enqueue_script(
 			'elp_js',
@@ -86,6 +87,17 @@ class Vital_External_Link_Popups {
 			$this->version,
 			true
 		);
+
+		if ($is_IE) {
+
+			wp_enqueue_script(
+				'elp_url_polyfill',
+				$this->plugin_url . 'assets/js/external-link-popups-ie-polyfills' . $this->suffix . '.js',
+				false,
+				$this->version,
+				true
+			);
+		}
 
 		wp_localize_script('elp_js', 'ELP', [
 			'homeUrl'    => get_home_url(),

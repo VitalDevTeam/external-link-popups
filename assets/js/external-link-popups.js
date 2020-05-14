@@ -13,14 +13,17 @@
 
 		for (var i = 0; i < links.length; i++) {
 
-			var thisLink = new URL(links[i].href);
+			if (links[i].href) {
 
-			if (thisLink.host !== homeHost) {
-				if (!isException(links[i].href)) {
-					links[i].addEventListener('click', function(e) {
-						e.preventDefault();
-						doPopup(this);
-					});
+				var thisLink = new URL(links[i].href);
+
+				if (thisLink.host !== homeHost) {
+					if (!isException(links[i].href)) {
+						links[i].addEventListener('click', function(e) {
+							e.preventDefault();
+							doPopup(this);
+						});
+					}
 				}
 			}
 		}
