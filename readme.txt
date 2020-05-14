@@ -2,7 +2,7 @@
 Contributors: adamwalter
 Requires at least: 5.4
 Tested up to: 5.4
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 Requires PHP: 7.2
 
 Enables an interstitial pop-up message to users when clicking a link to an external URL. Requires Advanced Custom Fields.
@@ -17,6 +17,10 @@ Enables an interstitial pop-up message to users when clicking a link to an exter
 1. Activate the plugin through the 'Plugins' screen in WordPress
 
 == Changelog ==
+
+= 2.0.3 =
+* Adds polyfills for IE
+* Fixes error if link href is blank
 
 = 2.0.2 =
 * Update test

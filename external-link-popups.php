@@ -2,7 +2,7 @@
 /*
 	Plugin Name: External Link Pop-ups
 	Description: Enables an interstitial pop-up message to users when clicking a link to an external URL. Requires Advanced Custom Fields.
-	Version: 2.0.0
+	Version: 2.0.3
 	Author: Vital
 	Author URI: https://vtldesign.com
 	Text Domain: vital
