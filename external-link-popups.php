@@ -31,7 +31,7 @@ class Vital_External_Link_Popups {
 
 		$this->plugin_path = plugin_dir_path(__FILE__);
 		$this->plugin_url  = plugin_dir_url(__FILE__);
-		$this->version = '1.0.0';
+		$this->version = '2.0.3';
 		$this->suffix = (defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) ? '' : '.min';
 
 		require $this->plugin_path . 'admin.php';
